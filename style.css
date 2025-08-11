@@ -188,7 +188,7 @@ a{
         transform: translateY(0%);
     }
 }
-
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .Home {
         flex-direction: column;
