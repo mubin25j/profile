@@ -247,9 +247,11 @@ a{
     }
     .Home-info h1 {
         font-size: 28px;
+        margin-top: 25px;
     }
     .Home-info h2 {
         font-size: 18px;
+        margin-top: 8px;
     }
     .btn {
         padding: 8px 16px;
@@ -265,3 +267,4 @@ a{
         height: 200px;
     }
 }
+
