@@ -20,12 +20,17 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 9999;
     visibility: hidden;
     opacity: 0;
     animation: show-content 1.5s linear forwards;
+    transition: transform 0.2s ease, opacity 0.1s ease;
     animation-delay: 1.2s;
 
+}
+.navbar.hide {
+  transform: translateY(-100%);
+  opacity: 0.0;
 }
 @keyframes show-content{
     100%{
@@ -188,6 +193,7 @@ a{
         transform: translateY(0%);
     }
 }
+
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .Home {
@@ -247,11 +253,12 @@ a{
     }
     .Home-info h1 {
         font-size: 28px;
-        margin-top: 25px;
+        margin-top: 40px; /* was 25px */
+        margin-bottom: 12px;
     }
     .Home-info h2 {
         font-size: 18px;
-        margin-top: 8px;
+        margin-top: 12px;
     }
     .btn {
         padding: 8px 16px;
@@ -267,4 +274,3 @@ a{
         height: 200px;
     }
 }
-
