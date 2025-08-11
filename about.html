@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            background: #1f242d;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 120px 9% 50px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h1 {
+            font-size: 42px;
+            color: greenyellow;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-img img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            border: 3px solid greenyellow;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .about-img img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Skills Section */
+        .skills {
+            background: #252b36;
+            padding: 50px 9%;
+            text-align: center;
+        }
+
+        .skills h2 {
+            color: greenyellow;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1f242d;
+            border: 2px solid greenyellow;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .skill:hover {
+            background: greenyellow;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .about-section {
+                text-align: center;
+            }
+            .about-text h1 {
+                font-size: 30px;
+            }
+            .about-text p {
+                font-size: 14px;
+            }
+            .about-img img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">Portfolio.</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>Hi, I’m <b>Abdullah Al Mubin</b> — a passionate Web Developer and aspiring Software Engineer. 
+            I specialize in creating responsive, user-friendly, and visually appealing websites. My goal is to combine creativity with technical skills 
+            to deliver efficient digital solutions.</p>
+            <p>Outside coding, I’m always learning new technologies, improving my design skills, 
+            and exploring ways to make web experiences more engaging.</p>
+        </div>
+
+        <div class="about-img">
+            <img src="mine.png" alt="Abdullah Al Mubin">
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-list">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">C++, python</div>
+            <div class="skill">Responsive Design</div>
+        </div>
+    </section>
+
+</body>
+</html>
